@@ -35,36 +35,50 @@ a:hover {
 
 /* Header / Navigation */
 .site-header {
+  background: #f2f2f2;              /* fond légèrement sombre */
   border-bottom: 1px solid #cccccc;
-  background: #f8f8f8;
 }
 
 .nav {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .brand {
   font-weight: bold;
   font-size: 18px;
-  color: #000000;
+  color: #111111;
+  padding: 8px 12px;
 }
 
 .menu {
+  display: flex;
+  gap: 12px;
   font-size: 15px;
 }
 
 .menu a {
-  margin-left: 12px;
+  padding: 8px 14px;
+  text-decoration: none;
+  color: #003399;
+  background: #e9ecef;          /* rectangle visible */
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.menu a:hover {
+  background: #dfe3e8;          /* léger effet au survol */
 }
 
 .menu a.active {
+  background: #cfd4da;          /* onglet actif */
   font-weight: bold;
-  text-decoration: none;
   color: #000000;
 }
+
 
 /* Main content */
 main {
@@ -78,11 +92,16 @@ h1 {
   font-weight: bold;
 }
 
+/* Section titles */
 h2 {
-  font-size: 18px;
-  margin: 20px 0 6px 0;
-  font-weight: bold;
+  color: #003399;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 6px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-weight: 600;
 }
+
 
 /* Paragraphs */
 p {
@@ -140,4 +159,21 @@ li {
   .menu a {
     margin-left: 8px;
   }
+}
+
+/* Teaching PDF links */
+.teaching-list li {
+  margin-bottom: 6px;
+}
+
+.pdf-link {
+  margin-left: 8px;
+  color: #b00020;              /* rouge académique */
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95em;
+}
+
+.pdf-link:hover {
+  text-decoration: underline;
 }
