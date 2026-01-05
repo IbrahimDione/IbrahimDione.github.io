@@ -177,3 +177,68 @@ li {
 .pdf-link:hover {
   text-decoration: underline;
 }
+
+/* Teaching course blocks */
+.course {
+  margin: 0;
+  padding: 0;
+}
+
+.course-title {
+  font-size: 17px;
+  font-weight: bold;
+  color: #003399;                 /* bleu académique */
+  margin: 0 0 14px 0;
+  padding: 6px 10px;
+  background: #f2f4f7;            /* léger fond */
+  border-left: 4px solid #003399; /* repère visuel */
+}
+
+.course-section {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 10px;
+  padding: 6px 0;
+}
+
+.course-section-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.course-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;              /* space between pdf links */
+}
+
+/* Reuse your pdf-link (red). Keep it consistent */
+.pdf-link {
+  padding: 2px 8px;
+  border: 1px solid #b00020;
+  border-radius: 4px;
+  color: #b00020;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.pdf-link:hover {
+  text-decoration: underline;
+}
+
+.course-sep {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 16px 0;
+}
+
+@media (max-width: 720px) {
+  .course-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+.institution-title {
+  text-align: center;
+}
