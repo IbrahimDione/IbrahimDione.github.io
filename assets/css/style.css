@@ -242,3 +242,448 @@ li {
 .institution-title {
   text-align: center;
 }
+
+.experience-item {
+  margin-bottom: 1.2rem;
+}
+
+.experience-title {
+  margin-bottom: 0.4rem;
+}
+
+.experience-pdfs {
+  display: flex;
+  flex-direction: column; /* empilement vertical */
+  gap: 0.25rem;
+  margin-left: 1rem; /* léger retrait visuel */
+}
+
+.dates {
+  color: #777;
+  font-size: 0.9em;
+}
+
+/* Supprimer les puces */
+.experience-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Bloc expérience */
+.experience-item {
+  padding: 0.9rem 0;
+  margin-bottom: 1.4rem;
+}
+
+/* Séparateur léger entre expériences */
+.experience-item:not(:last-child) {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* Titre de l’expérience */
+.experience-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Dates */
+.experience-title .dates {
+  font-weight: 400;
+  color: #666;
+  font-size: 0.95em;
+  margin-left: 0.3rem;
+}
+
+/* PDFs */
+.experience-pdfs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-left: 0.5rem;
+}
+
+/* Liste éducation */
+.education-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Élément diplôme */
+.education-item {
+  padding: 0.75rem 0;
+}
+
+/* Séparateur discret */
+.education-item:not(:last-child) {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* Diplôme */
+.education-degree {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+/* Université + année */
+.education-meta {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.edu-year {
+  color: #777;
+}
+
+/* Funding list */
+.funding-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Item */
+.funding-item {
+  padding: 0.75rem 0;
+}
+
+/* Séparateur discret */
+.funding-item:not(:last-child) {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* Titre financement */
+.funding-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+/* Montant + années */
+.funding-meta {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.funding-years {
+  color: #777;
+}
+
+.publications-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.publication-item {
+  padding: 0.9rem 0;
+}
+
+.publication-item:not(:last-child) {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.publication-header {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.2rem;
+}
+
+.pub-year {
+  color: #777;
+}
+
+.publication-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.publication-journal {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.publication-link {
+  font-size: 0.9rem;
+}
+
+/* ===== Home main layout ===== */
+
+.home-hero {
+  display: grid;
+  grid-template-columns: 260px 1fr; /* photo à gauche */
+  gap: 2.2rem;
+  align-items: start;
+  margin-top: 1.4rem;
+}
+
+/* ===== Left column ===== */
+
+.home-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.portrait {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.actions {
+  margin-top: 0.8rem;
+}
+
+.home-location {
+  margin-top: 0.8rem;
+}
+
+/* ===== CV button ===== */
+
+.button {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cv-button {
+  background-color: #ffffff;
+  color: #333;
+  border: 2px solid #333;
+}
+
+.cv-button:hover {
+  background-color: #333;
+  color: #ffffff;
+}
+
+/* ===== Right column ===== */
+
+.home-title {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  font-size: 2rem;
+}
+
+.home-subtitle {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+}
+
+.home-card {
+  margin-top: 1rem;
+  border: 1px solid #e6e6e6;
+  background-color: #fafafa;
+}
+
+/* ===== Contact inline ===== */
+
+.kv-inline {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  row-gap: 0.6rem;
+  column-gap: 1rem;
+}
+
+.kv-inline strong {
+  color: #333;
+}
+
+.kv-inline a {
+  color: #555;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.kv-inline a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+/* ===== About ===== */
+
+.home-about {
+  margin-top: 1.6rem;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 900px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .home-profile {
+    align-items: center;
+  }
+
+  .portrait {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 520px) {
+  .kv-inline {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Talks ===== */
+
+.talks-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.talk-item {
+  padding: 0.9rem 0;
+}
+
+.talk-item:not(:last-child) {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.talk-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.talk-meta {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.35rem;
+}
+
+.talk-subtitle {
+  margin-top: 0.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.talk-links {
+  margin-top: 0.2rem;
+}
+
+/* =====================================================
+   Teaching — Final visual formatting (append-only)
+   ===================================================== */
+
+/* Institution header: more "section" look */
+.institution-title {
+  text-align: left;          /* plus naturel que centré */
+  margin-top: 2rem;
+  margin-bottom: 0.9rem;
+  font-size: 1.35rem;
+  color: #003399;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 6px;
+}
+
+/* Course title: keep your style but make it a bit cleaner */
+.course-title {
+  margin: 0 0 0.9rem 0;
+  padding: 8px 12px;
+  border-left: 4px solid #003399;
+  background: #f2f4f7;
+  border-radius: 4px;
+}
+
+/* Course sections: add subtle separators + spacing */
+.course-section {
+  padding: 0.65rem 0;
+  border-top: 1px solid #ededed;
+}
+
+.course-section:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.course-section-title {
+  color: #222;
+}
+
+/* Links: tidy wrap and spacing */
+.course-links {
+  gap: 8px;
+}
+
+/* PDF links: pill style (looks better for many PDFs) */
+.course .pdf-link {
+  display: inline-block;
+  margin-left: 0;            /* override earlier margin-left */
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid #b00020;
+  color: #b00020;
+  background: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.course .pdf-link:hover {
+  background: #b00020;
+  color: #fff;
+  border-color: #b00020;
+  text-decoration: none;     /* override underline */
+}
+
+/* Separator between courses inside card */
+.course-sep {
+  margin: 18px 0;
+  border-top: 1px solid #e6e6e6;
+}
+
+/* Responsive: one-column sections */
+@media (max-width: 720px) {
+  .course-section {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
+
+/* =====================================================
+   Global PDF link style (used across ALL pages)
+   ===================================================== */
+
+   .pdf-link {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;          /* pill shape */
+    border: 1px solid #b00020;     /* academic red */
+    background: #ffffff;
+    color: #b00020;
+    font-weight: 600;
+    font-size: 0.92rem;
+    text-decoration: none;
+    transition: background 0.15s ease,
+                color 0.15s ease,
+                border-color 0.15s ease;
+  }
+  
+  /* Hover */
+  .pdf-link:hover {
+    background: #b00020;
+    color: #ffffff;
+    border-color: #b00020;
+    text-decoration: none;
+  }
+  
+  /* Spacing helper when PDFs are stacked vertically */
+  .pdf-link + .pdf-link {
+    margin-top: 0.25rem;
+  }
+  

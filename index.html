@@ -7,6 +7,7 @@
   <meta name="description" content="Ibrahima Dione — Mathematics; numerical analysis; differential equations; numerical methods." />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
 
 <header class="site-header">
@@ -22,52 +23,69 @@
 </header>
 
 <main class="container">
-  <div class="grid">
-    <div>
-      <img class="portrait" src="assets/img/portrait.jpg" alt="Portrait of Ibrahima Dione" />
-      <div class="actions">
-        <a class="button" href="assets/pdf/CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
-      </div>
-      <p class="muted" style="margin-top:10px;">
-        Moncton, NB, Canada
-      </p>
-    </div>
 
-    <div>
-      <h1>Ibrahima Dione</h1>
-      <p class="muted">
+  <section class="home-hero">
+
+    <!-- Colonne gauche : photo + CV -->
+    <aside class="home-profile">
+      <img
+        class="portrait"
+        src="assets/img/portrait.jpg"
+        alt="Portrait of Ibrahima Dione"
+      />
+
+      <div class="actions">
+        <a class="button cv-button" href="assets/pdf/CV.pdf" target="_blank" rel="noopener">
+          CV (PDF)
+        </a>
+      </div>
+
+      <p class="muted home-location">Moncton, NB, Canada</p>
+    </aside>
+
+    <!-- Colonne droite : contenu -->
+    <div class="home-content">
+      <h1 class="home-title">Ibrahima Dione</h1>
+
+      <p class="muted home-subtitle">
         Mathematician — Numerical analysis, differential equations, numerical methods.
       </p>
 
-      <div class="card">
-        <!-- <h2 style="margin-top:0;">Contact</h2> -->
-         <h3 class="course-title"> Contact </h3>
-        <div class="kv">
+      <div class="card home-card">
+        <h3 class="course-title">Contact</h3>
+        <hr class="course-sep" />
+
+        <div class="kv kv-inline">
           <div><strong>Email</strong></div>
-          <div><a href="mailto:ibrahima.dione.1@ulaval.ca">ibrahima.dione.1@ulaval.ca</a></div>
+          <div>
+            <a href="mailto:ibrahima.dione.1@ulaval.ca">
+              ibrahima.dione.1@ulaval.ca
+            </a>
+          </div>
 
           <div><strong>Location</strong></div>
           <div>Moncton, New Brunswick, Canada</div>
-          <!--
-          <div><strong>Office</strong></div>
-          <div class="muted">To be confirmed</div>
-          -->
         </div>
       </div>
 
-      <h2>About</h2>
-      <p>
-        This website provides access to my curriculum vitae, teaching activities, and talks.
-        My research focuses on numerical analysis and scientific computing, with particular interests in differential equations and numerical methods.
-      </p>
-      
+      <section class="home-about">
+        <h2>About</h2>
+        <p>
+          This website provides access to my curriculum vitae, teaching activities, and talks.
+          My research focuses on numerical analysis and scientific computing, with particular
+          interests in differential equations and numerical methods.
+        </p>
+      </section>
     </div>
-  </div>
 
-  <div class="footer">
+  </section>
+
+  <footer class="footer">
     © <span id="year"></span> Ibrahima Dione.
-  </div>
+  </footer>
+
 </main>
+
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
@@ -75,4 +93,3 @@
 
 </body>
 </html>
-
